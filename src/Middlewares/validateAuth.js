@@ -17,7 +17,7 @@ export default async function validateAuth(req, res, next) {
         // Armazenar informações da sessão no objeto res.locals
         const session = result.rows[0];
         res.locals.sessionId = session.id;
-        res.locals.userId = session.user_id;
+        res.locals.userId = session.userid;
     } catch (err) {
         res.status(500).send(err.message);
     }
