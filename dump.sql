@@ -5,7 +5,7 @@
 -- Dumped from database version 12.16 (Ubuntu 12.16-0ubuntu0.20.04.1)
 -- Dumped by pg_dump version 12.16 (Ubuntu 12.16-0ubuntu0.20.04.1)
 
--- Started on 2023-10-09 09:06:50 -03
+-- Started on 2023-10-09 17:20:16 -03
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -321,7 +321,7 @@ ALTER TABLE ONLY public.sessions
     ADD CONSTRAINT sessions_userid_fkey FOREIGN KEY (userid) REFERENCES public.users(id);
 
 
--- Completed on 2023-10-09 09:06:52 -03
+-- Completed on 2023-10-09 17:20:18 -03
 
 --
 -- PostgreSQL database dump complete
